@@ -16,4 +16,8 @@ store_name = gets.chomp
 # Attempt to create a store with the inputted name
 store = Store.new(name: store_name)
 
-store.save
+if store.save
+  puts "Saved"
+else
+  puts "Error"
+end
