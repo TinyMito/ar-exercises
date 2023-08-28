@@ -19,5 +19,5 @@ store = Store.new(name: store_name)
 if store.save
   puts "Saved"
 else
-  puts "Error"
+  puts store.errors.full_messages
 end
